@@ -10,3 +10,67 @@ body{
     justify-content: center;
     height: 100vh;
 }
+.question-footer{
+    border-top: 1px solid #000000c5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+
+}
+.quiz-card{
+    width: 40rem
+}
+.card_design:hover{
+    border-color: #007AFF;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.05);
+}
+.endQuizDialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+} 
+.startQiuzDialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-body img{
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 655px) {
+    .quiz-card {
+        width: 100%;
+        margin: 0 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .question-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
